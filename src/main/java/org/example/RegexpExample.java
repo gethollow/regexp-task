@@ -33,12 +33,17 @@ public class RegexpExample {
         // todo word содержит только буквы
         // todo word не содержит заглавных букв
         // todo word не содержит пробелов
-//        System.out.println(text.matches(".*"));
+        System.out.println(digit.matches("[\\d]+"));
+        System.out.println(word.matches("[\\w]+"));
+        System.out.println(word.matches("[^A-Z]+"));
+        System.out.println(word.matches("[\\S]+"));
+
+
 
         ///// ReplaceAll
         // todo скрыть длинные номера
         // todo скрыть email-адреса
-
+        System.out.println();
 
 //    Anchors
 //        ^, matches the beginning of the string, or the beginning of a line if the multiline flag (m) is enabled. This matches a position, not a character.
@@ -57,7 +62,7 @@ public class RegexpExample {
 //        (?!ABC), specifies a group that can not match after the main expression (if it matches, the result is discarded).
         // todo вывести имя
         // todo вывести телефон
-
+ //       System.out.println(text.replaceAll(""));
 
     }
 }
